@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import pic from "../assets/perfil.jpg";
 
 export const Main = styled.main`
   .first {
@@ -30,6 +31,13 @@ export const Main = styled.main`
           background: #7abb91;
           width: 100%;
           height: 100%;
+          .main-img {
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            background-image: url(${pic});
+          }
         }
       }
     }

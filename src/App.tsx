@@ -4,21 +4,27 @@
  *
  */
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import GlobalStyles from "./styles/global";
 import { Main, Section, Sticky } from "./styles";
 import FirstAndSecond from "./components/FirstAndSecond";
-import Header from "./components/Header";
+// import Header from "./components/Header";
+import Navbar from "./components/Navbar";
 
 function App() {
+  const [navbarOpen, setNavbarOpen] = useState(false);
+
+  const handleNavbar = () => {
+    setNavbarOpen(!navbarOpen);
+  };
+
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, []);
 
   return (
     <>
-      <GlobalStyles />
-      <Header />
+      {/* <Header /> */}
 
       <Main style={{ height: "1610vh" }}>
         <Section style={{ height: "72.7%" }}>
@@ -32,6 +38,8 @@ function App() {
         <Section style={{ height: "10.1%" }}>
           <Sticky className='fourth' />
         </Section>
+        <GlobalStyles />
+        <Navbar navbarState={navbarOpen} handleNavbar={handleNavbar} />
       </Main>
     </>
   );

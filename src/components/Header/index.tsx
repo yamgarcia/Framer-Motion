@@ -12,7 +12,15 @@ const Header: React.FC = () => {
     ["0%", "-100%"]
   );
 
-  return <Container style={{ y: headerY }} />;
+  return (
+    <Container style={{ y: headerY }}>
+      <ul>
+        <li>home</li>
+        <li>Resume</li>
+        <li>Contact</li>
+      </ul>
+    </Container>
+  );
 };
 
 export default Header;

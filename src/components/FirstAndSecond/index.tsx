@@ -95,7 +95,9 @@ const First: React.FC = () => {
                 y: rightSideY,
                 scale: rightSideScale,
               }}
-            />
+            >
+              <motion.div className='main-img' />
+            </motion.div>
           </div>
         </div>
 
