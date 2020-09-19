@@ -3,12 +3,10 @@
  * //* 1610vh => Viewport Height (vh) – A percentage of the full viewport height. 10vh will resolve to 10% of the current viewport height.
  *
  */
-
 import React, { useEffect, useState } from "react";
 import GlobalStyles from "./styles/global";
 import { Main, Section, Sticky } from "./styles";
 import FirstAndSecond from "./components/FirstAndSecond";
-// import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 
 function App() {
@@ -24,8 +22,6 @@ function App() {
 
   return (
     <>
-      {/* <Header /> */}
-
       <Main style={{ height: "1610vh" }}>
         <Section style={{ height: "72.7%" }}>
           <FirstAndSecond />
