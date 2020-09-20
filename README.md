@@ -1,6 +1,6 @@
 <h4 align="center">
 <br>
- <b>Animated single page with the purpose of practing Styled-Components, framer-motion, and react-spring </b>
+ <b>Animated single page with the purpose of practicing  Styled-Components, framer-motion, and react-spring </b>
 </h4>
 <p align="center">
   <img alt="License" src="https://img.shields.io/badge/license-MIT-red">
