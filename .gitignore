@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+/public/demo.mp4
 
 # testing
 /coverage
